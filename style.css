@@ -1,0 +1,259 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(39, 40, 39);
+    color: rgb(235, 235, 235);
+    user-select: none;
+}
+
+
+
+
+
+/*TOP--------------------------------------------------------------------------*/
+
+.topContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0 20px 15vh 20px;
+}
+
+.levelContainer{
+    display: flex;
+    align-items: center;
+    width: 300px;
+}
+
+.level{
+    color: cyan;
+    margin-right: 20px;
+}
+
+.levelBar{
+    height: 20px;
+    background-color: cyan;
+    transition: width 0.25s;
+}
+
+.aLvlNum{
+    margin-left: 5px;
+    font-size: 26px;
+}
+
+.currencyContainer{
+    display: flex;
+}
+
+.currencyContainer h2{
+    margin-right: 20px;
+}
+
+
+
+
+/*MAIN------------------------------------------------------------------------*/
+
+.mainContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.statsContainer, .enemyContainer, .upgradesContainer{
+    width: 15vw;
+    height: 50vh;
+    background-color: rgb(0, 0, 0);
+    overflow: auto;
+}
+
+.title{
+    text-align: center;
+}
+
+
+.statContainer{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.statContainer h3, .statContainer h2{
+    margin: 10px 5px;
+}
+
+.upgradeContainer{
+    margin: auto;
+    margin-top: 10px;
+    width: 85%;
+    background-color: gray;
+    padding:10px;
+    cursor: pointer;
+}
+
+.upgradeTop, .upgradeBot h3{
+    margin: 0;
+}
+
+.upgradeBot{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+
+/*ENEMY*/
+
+.enemy{
+    cursor: pointer;
+    height: 95%;
+    background-image: url("./assets/atziri.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.hpBar{
+    background-color: green;
+    height: 5%;
+    transition: width 0.25s;
+}
+
+
+/*MENU---------------------------------------------------------------------*/
+
+.menuContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15vh;
+}
+
+.menuLeft, .menuRight{
+    display: flex;
+    justify-content: space-around;
+    width: 20vw;
+}
+
+.icon{
+    background-color: black;
+    padding: 20px;
+    cursor: pointer;
+}
+
+
+/*TREE---------------------------------------------------------------------*/
+
+.treePanel{
+    width: 60vw;
+    height: 60vh;
+    background-color: black;
+    position: absolute;
+    top: 15vh;
+    left: 20vw;
+    overflow: auto;
+}
+
+.treeBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    background-color: rgb(65, 65, 65);
+}
+
+.treeBar div{
+    padding: 15px;
+}
+
+.treeClose{
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.treeClose:hover{
+    background-color: black;
+}
+
+/*Path*/
+
+.pathContainer{
+    display: flex;
+    margin: 50px 20px;
+}
+
+.pathTitle{
+    font-size: 28px;
+    padding-top: 20px;
+}
+
+.nodesContainer{
+    display: flex;
+    margin-left: 50px;
+}
+
+.nodeContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    width: 80px;
+}
+
+.node{
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.keystone{
+    width: 120px;
+    height: 120px;
+}
+
+.linkHor{
+    border: solid 1px white;
+    border-left: none;
+    border-right: none;
+    width: 100px;
+    height: 20px;
+    margin-top: calc(80px / 2 - 10px);
+}
+
+.linkVer{
+    border: solid 1px white;
+    border-top: none;
+    border-bottom: none;
+    width: 20px;
+    height: 100px;
+}
+
+.keystoneHor{
+    margin-top: -20px;
+}
+
+
+.descr{
+    width: 200px;
+    height: min-content;
+    background-color: black;
+    position: fixed;
+    text-align: center;
+    border: solid 2px rgb(65, 65, 65);
+}
+
+.descrTitle{
+    font-size: 18px;
+    padding: 5px;
+}
+
+.descrInfo{
+    padding: 5px;
+}
+
+.descrBottom{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
